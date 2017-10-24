@@ -1,0 +1,94 @@
+﻿#image-logo{
+    float:left;
+    margin-left:42%;
+    width:70%;
+}
+
+
+::-webkit-scrollbar{
+-webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical{
+    width:12px;
+}
+
+::-webkit-scrollbar:horizontal{
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+h1{
+    border-bottom: 1px solid #000000;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+p{
+    margin-left: 1.2%;
+}
+
+hr{
+    display:block;
+    border-style: inset;
+    border-width: 1px;
+    width: 99.2%;
+}
+
+.textarea{
+    resize: none;
+    width:98.7%;
+    height:80%;
+}
+
+.kbw-signature{
+    width: 400px; height:200px;
+}
+
+.btnClear{
+    width:300px;
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: white;
+    cursor: pointer;
+    opacity: 1;
+    float: left;
+    margin-left: 3%;
+}
+
+.btnNext{
+    width: 300px;
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: white;
+    cursor: pointer;
+    opacity: 1;
+    float: right;
+    margin-right: 3%;
+}

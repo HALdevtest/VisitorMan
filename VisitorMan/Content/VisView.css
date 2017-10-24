@@ -1,0 +1,343 @@
+﻿.text{
+    color: #a29064;
+}
+
+.kbw-signature{
+    width: 400px;
+    height: 200px;
+}
+
+.dimmed{
+    position: relative;
+}
+
+#overlay-content{display:none;}
+
+#HandS{
+    display: none;
+    position:absolute;
+    top:0;
+    background-color: white;
+    padding: 0 20%;
+}
+
+.hs{
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+h1{
+    border-bottom: 1px solid #000000;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+p{
+    margin-left: 1.2%;
+}
+
+#test{
+    z-index: 20;
+    position: absolute;
+    display: none;
+}
+
+#test2{
+    z-index: 20;
+    position: fixed;
+    display: none;
+}
+
+.test {
+    z-index: 20;
+    position: relative;
+}
+
+.continue-button{
+    margin-left: 35%;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.exit{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.overlay-box{
+    position: absolute;
+    z-index : 20;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+}
+
+.safety-box{
+    position:absolute;
+    z-index: 20;
+}
+
+
+.textbox{
+    border:none;
+}
+.textbox:focus{
+    outline: none;
+}
+
+.dimmed::after {
+    content: " ";
+    z-index: 10;
+    display: block;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+#content-buttons{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#content-main2{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-Check{
+    font-size:30px;
+}
+
+button span{
+    display:block;
+}
+
+#lblCheckIn{
+    margin-right: 10%;
+    font-size: 32px;
+}
+
+#content-title{
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+#header-main{
+    width: 100%;
+    overflow: hidden;
+    height: 5%;
+}
+
+#header-time{
+    float: left;
+    width: 11%;
+}
+
+#header-date{
+    float:left;
+    width: 29%;
+}
+
+#image-logo{
+    float: left;
+    margin-left: 42%;
+    width: 70%;
+}
+
+#logo{
+    text-align: center
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.test-img {
+    width: 100%;
+    display:block;
+}
+
+ul{
+    padding: 0;
+}
+
+.logo{
+    position: absolute;
+}
+
+.time{
+    font-family: 'GillSansLight', sans-serif;
+    font-size: 36px;
+    /*margin-top: 0px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    top: -1000px;*/
+    margin-left: 18%;
+}
+
+.date{
+    font-family: 'GillSansLight', sans-serif;
+    font-size: 36px;
+    margin-left: 11%;
+}
+
+.welcometext{
+    padding-left:7%;
+    font-family: 'GillSansLight', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+.checkintext{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-background{
+    background-color: #ffffff;
+}
+
+.background{
+    background-color: #202020;
+    /*background-color: #3A4B01;*/
+}
+
+#content {
+    position: relative;
+}
+
+#content img{
+    position: relative;
+}
+
+.btnCheckIn{
+    margin: 0;
+}
+
+.holder{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+}
+
+.holder img{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:1;
+    height: 108px;
+}
+
+.checkin_btn2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    font-size:16px;
+    background-color: white;
+    cursor: pointer;
+    opacity:0.85;
+    float: right;
+    margin-right: 10%;
+}
+
+.checkout_btn{
+    width: 300px;
+    height: 70px;
+    padding:10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color: #333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.85;
+    float: right;
+    margin-right: 10%;
+}
+
+
+.checkout_btn:hover{
+    background-color: #f7f7f7;
+}
+
+.checkout_btn img{
+    float:left;
+    height:52px;
+}
+
+.checkin_btn{
+    width: 300px;
+    height: 70px;
+    padding:10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color: #333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.85;
+    float: right;
+    margin-right: 5%;
+}
+
+
+.checkin_btn:hover{
+    background-color: #f7f7f7;
+}
+
+.checkin_btn img{
+    float:left;
+    height:52px;
+}
+
+.lang_btn{
+    width: 300px;
+    height: 70px;
+    padding:10px;
+    line-height: 50px;
+    text-align: center;
+    text-indent: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color: #333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.lang_btn:hover{
+    background-color: #f7f7f7;
+}
+
+.lang_btn img{
+    float:left;
+    height: 52px;
+}

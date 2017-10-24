@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="SilverlightApplication1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="800" d:DesignWidth="900">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Button Content="Activate Camera" Height="23" HorizontalAlignment="Left" Margin="156,20,0,0" Name="btnActivate" VerticalAlignment="Top" Width="100" Click="btnActivate_Click" />
+        <Rectangle Height="239" HorizontalAlignment="Left" Margin="12,49,0,0" Name="rectangle1" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="376" />
+        <Rectangle Height="239" HorizontalAlignment="Left" Margin="409,49,0,0" Name="rectangle2" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="376" />
+        <Button Content="Freeze Frame" Height="23" HorizontalAlignment="Left" Margin="559,20,0,0" Name="btnFreeze" VerticalAlignment="Top" Width="100" Click="btnFreeze_Click" />
+        <Image Height="183" HorizontalAlignment="Left" Margin="409,305,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="376" />
+        <Button Name="btnSave" Content="Save Shot" Click="btnSave_Click" Height="23" HorizontalAlignment="Left" Width="85" Margin="500,200,0,0"></Button>
+    </Grid>
+</UserControl>

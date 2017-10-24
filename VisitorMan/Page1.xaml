@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisitorMan.Page1">
+</ContentPage>-->
+
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      x:Name="LayoutRoot" Background="White">
+    <Rectangle x:Name="vRect"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Fill="DimGray" Width="500" Height="400"/>
+    <StackPanel Orientation="Horizontal">
+        <Button Name="btnStartWebcam"
+                Width="100" Height="25" Content="Start Webcam"
+                VerticalAlignment="Top"
+                Click="btnStartWebcam_Click"/>
+        <Button Name="btnStopWebcam"
+                Width="100" Height="25" Content="Stop Webcam"
+                VerticalAlignment="Top"
+                Click="btnStopWebcam_Click"/>
+    </StackPanel>
+</Grid>
+    

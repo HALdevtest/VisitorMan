@@ -1,0 +1,18 @@
+﻿.kbw-signature{
+            width: 400px; height:200px;
+}
+
+hr {
+    display: block;
+    /*margin-top: 0.5em;
+    margin-bottom: 0.5em;*/
+    border-style: inset;
+    border-width: 1px;
+    /*margin:auto;*/
+}
+
+#image-logo{
+    float: left;
+    margin-left: 42%;
+    width:70%;
+}
