@@ -146,8 +146,8 @@
                 </section>
 
                 <section id="overlay">
-                    <div id="overlay-main">
-                        <div id="overlay-content" class="overlay-box overlay">
+                    <div id="modal-wrapper">
+                        <div id="modal-content">
                             <div id="overlay-header">
                                 <asp:Label ID="lblHeader" runat="server" Text="Please enter your details"></asp:Label>
                                 <button type="button" runat="server" id="btnContinue" class="continue-button">
@@ -166,11 +166,14 @@
                             <asp:Label ID="lblVisiting" runat="server" Text="Visiting: " CssClass="test"></asp:Label>
                             <asp:TextBox ID="txtVisiting" runat="server" CssClass="test textbox" style="margin-left:14.3%;"></asp:TextBox>
                         </div>
-                                <button type="button" id="test" class="exit"><span>X</span></button>
+                                <button type="button" id="exit" class="exit"><span>X</span></button>
 
                         <div id="HandS">
                             <div>
-                            <h1>SAFETY</h1>
+                                <div class="centerdiv">
+                                     <h1>Visitor & Contractor Information</h1>
+                                </div>
+                                    <h2>SAFETY</h2>
                                     <p>
                                      Harrods Aviation Limited has a legal responsibility for the safety of its employees, visitors, clients and all other third parties.
                                      As with all airport environments, certain parts of our business will have many high risk areas, including moving machinery and / or vehicles, chemicals etc.
@@ -200,7 +203,7 @@
                                      Harrods Aviation Limited complies with Government and British Airport Authority legislation as amended from time to time.
                                     </p>
 
-                                    <h1>FIRE</h1>
+                                    <h2>FIRE</h2>
 
                                     <p>
                                         Please take time to familiarise yourself with your surroundings and your nearest means of escape. 
@@ -211,13 +214,13 @@
                                         please do not attempt to move it unless instructed as this may hamper the emergency services.
                                     </p>
 
-                                    <h1>ACCIDENTS/ILLNESS</h1>
+                                    <h2>ACCIDENTS/ILLNESS</h2>
 
                                     <p>
                                         Your host will arrange for a member of staff trained in first aid to attend should you fall ill or have an accident.
                                     </p>
 
-                                    <h1>CONTRACTORS ONLY</h1>
+                                    <h2>CONTRACTORS ONLY</h2>
 
                                     <p>
                                         If you are carrying out physical work, advance notice is required and a permit to work must be obtained.  Your host will advise and arrange.
@@ -232,7 +235,7 @@
                                         Such items should be provided by yourself.
                                     </p>
 
-                                    <h1>SECURITY</h1>
+                                    <h2>SECURITY</h2>
 
                                     <p>
                                         Whilst on site, the visitor pass you have been issued is to be displayed at all times and is to be returned to reception before you depart.
@@ -262,10 +265,13 @@
                                         T: 01279 665313 or 07767 606781
                                     </p>
                                 <hr />
+                                <button id="btnAgree" type="button" runat="server">Agree</button>
                                 </div>
-                            <div id="signature">
-                                <asp:Label ID="lblSig" runat="server" Text="By signing below, I have read and understood the above text"></asp:Label>
-                                <div id="sig" class="kbw-signature">
+                            <div id="module-sig" class="overlay-box">
+                                <div id="signature">
+                                    <asp:Label ID="lblSig" runat="server" Text="By signing below, I have read and understood the above text"></asp:Label>
+                                    <div id="sig" class="kbw-signature"></div>
+                                    <button id="btnClear" type="button" runat="server">Clear</button>
                                 </div>
                             </div>
                         </div>
@@ -273,113 +279,16 @@
                     </div>
                 </section>
 
-         <%--       <section id="H&S">
-                    <div id="safety-main" class="overlay">
-                        <div id="safety-content" class="safety-box">
-                             <div id="panel" runat="server" style="overflow-y:auto; height:700px; border:1px solid black;" class="panel">
-                                 
-                                    <h1>SAFETY</h1>
-                                    <p>
-                                     Harrods Aviation Limited has a legal responsibility for the safety of its employees, visitors, clients and all other third parties.
-                                     As with all airport environments, certain parts of our business will have many high risk areas, including moving machinery and / or vehicles, chemicals etc.
-                                     During your visit your host will point out any particular hazards contained in the areas you may be visiting.
-                                    </p>
+      
 
-                                    <p>
-                                     You are requested to do nothing that may prevent us from discharging our legal responsibilities, 
-                                     as any unsafe act or omission could adversely affect the safety or welfare of other people.
-                                    </p>
 
-                                    <p>
-                                     If during your visit, you become aware of any potential health and safety problem, please do not hesitate to report it to your host.
-                                    </p>
-
-                                    <p>
-                                     All visitors must be accompanied by their host while on site.  Visitors are requested to refrain from entering areas they have no specific need to access.
-                                     Doors marked as emergency exits/fire doors should only be opened in the event of an emergency.
-                                    </p>
-
-                                    <p>
-                                     If you have visited Harrods Aviation before, the company is constantly changing layouts and improving systems.   
-                                     Please do not presume that areas are the same as your previous visit.
-                                    </p>
-
-                                     <p>
-                                     Harrods Aviation Limited complies with Government and British Airport Authority legislation as amended from time to time.
-                                    </p>
-
-                                    <h1>FIRE</h1>
-
-                                    <p>
-                                        Please take time to familiarise yourself with your surroundings and your nearest means of escape. 
-                                         In the event of fire alarm activation, an electronic siren will be heard with the buildings.  
-                                        Should this occur, you must evacuate the building immediately using the nearest fire exit.  
-                                        Once out of the building, your host will direct you to the nearest assembly point where you should remain until further instructions are issued.  
-                                        Do not attempt to re-enter the building.  If you have arrived by car and this is in our car park, 
-                                        please do not attempt to move it unless instructed as this may hamper the emergency services.
-                                    </p>
-
-                                    <h1>ACCIDENTS/ILLNESS</h1>
-
-                                    <p>
-                                        Your host will arrange for a member of staff trained in first aid to attend should you fall ill or have an accident.
-                                    </p>
-
-                                    <h1>CONTRACTORS ONLY</h1>
-
-                                    <p>
-                                        If you are carrying out physical work, advance notice is required and a permit to work must be obtained.  Your host will advise and arrange.
-                                    </p>
-                                    <p>
-                                        Any waste materials generated by your activities must be removed from site unless agree by your host.  
-                                        Contractors are not permitted to use Harrods Aviation waste skips or pour any waste into surface drains.
-                                    </p>
-                                    <p>
-                                        You are asked to comply with all health and safety and operational requirements for the area you are operating in.  
-                                        For example, personal protective equipment such as goggles, harnesses, hi-visibility clothing etc.  
-                                        Such items should be provided by yourself.
-                                    </p>
-
-                                    <h1>SECURITY</h1>
-
-                                    <p>
-                                        Whilst on site, the visitor pass you have been issued is to be displayed at all times and is to be returned to reception before you depart.
-                                    </p>
-
-                                    <p>
-                                        Photographic equipment of any kind is forbidden unless prior permission has been given. 
-                                         If you have a mobile camera phone, you are required to declare this to your host.
-                                    </p>
-
-                                    <p>
-                                        Visitors wishing to use any radio communications whilst on site must advise the host in order that suitability can be checked.
-                                    </p>
-
-                                    <p>
-                                        All visitors are advised that CCTV cameras are in operation in all areas of Harrods Aviation Limited for the protection of our staff and customers.
-                                    </p>
-                                    <p>
-                                        Harrods Aviation Limited reserves the right to search personnel, bags, toolboxes and vehicles on a random basis. 
-                                    </p>
-                                    <p>
-                                        Some areas on site are classified as ‘sensitive’, therefore you are prohibited from walking around our facilities without your escort/host.
-                                    </p>
-
-                                    <p>
-                                        For any questions, please contact Harrods Aviation security:
-                                        T: 01279 665313 or 07767 606781
-                                    </p>
-                          </div>
-                        </div>
-                       <button type="button" runat="server" id="test2" class="exit"><span>X</span></button>
-                    </div>
-                </section>--%>
-
-            </div>
 
             <script type="text/javascript">
                       $(function () {
                           $('#sig').signature();
+                          $('#btnClear').click(function () {
+                              $('#sig').signature('clear');
+                          });
                       });
             </script>
 
@@ -387,14 +296,17 @@
                     $(document).ready(function () {
                         $("#btnCheckIn").click(function () {
                             $("#main-div").addClass("dimmed");
-                            $("#overlay-content").fadeIn();
-                            $("#test").fadeIn();
-                            $("#test2").fadeOut();
+                            $("#modal-content").fadeIn("show");
+                            $("#test").fadeIn("show");
+                            //$("#main-div").addClass("dimmed");
+                            //$("#overlay-content").fadeIn();
+                            //$("#test").fadeIn();
+                            //$("#test2").fadeOut();
                         });
-                        $('#test').click(function () {
-                            $("#overlay-content").fadeOut();
+                        $('#exit').click(function () {
+                            $("#modal-content").fadeOut();
                             $("#main-div").removeClass("dimmed");
-                            $("#test").fadeOut();
+                            $("#exit").fadeOut();
                         });
                     });
                 </script>
@@ -402,18 +314,23 @@
             <script type="text/javascript">
                 $(document).ready(function () {
                     $("#btnContinue").click(function () {
-                        $("#HandS").fadeToggle("hs");
                         $("#main-div").removeClass("dimmed");
                         $("#HandS").fadeIn();
-                        $("#overlay-content").fadeOut();
-                        $("#test").fadeOut();
+                        $("#modal-content").fadeOut();
+                        $("#exit").fadeOut();
                         $("#test2").fadeIn();
                         //$("#safety-main").toggleClass("overlay");
                     });
+                    $("#btnAgree").click(function () {
+                        $("#HandS").addClass("dimmed");
+                        $("#module-sig").fadeIn();
+                    })
                     $("#test2").click(function () {
                         $("#main-div").removeClass("dimmed");
                         $("#HandS").fadeOut();
                         $("#test2").fadeOut();
+                        $("#HandS").removeClass("dimmed");
+                        $("#module-sig").fadeOut();
                         //$("#safety-main").toggleClass("overlay");
                     });
                 });

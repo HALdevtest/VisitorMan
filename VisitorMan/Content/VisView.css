@@ -11,7 +11,24 @@
     position: relative;
 }
 
-#overlay-content{display:none;}
+#modal-content{
+    display:none;
+    position: absolute;
+    z-index : 20;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+}
+
+#module-sig{
+    display:none;
+}
 
 #HandS{
     display: none;
@@ -19,15 +36,22 @@
     top:0;
     background-color: white;
     padding: 0 20%;
+      width: 100%;
+    height: 100vh;
 }
 
-.hs{
-    width: 100%;
-    height: 100vh;
-    display: block;
-}
 
 h1{
+    border-bottom: 1px solid #000000;
+    display: inline-block;
+    font-size: 36px;
+}
+
+.centerdiv{
+    text-align: center;
+}
+
+h2{
     border-bottom: 1px solid #000000;
     display: inline-block;
     margin-left: 1%;
@@ -67,19 +91,6 @@ p{
     right: 0;
 }
 
-.overlay-box{
-    position: absolute;
-    z-index : 20;
-    background-color: white;
-    height: 200px;
-    width: 400px;
-    top: 50%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -100px;
-}
 
 .safety-box{
     position:absolute;
@@ -340,4 +351,36 @@ ul{
 .lang_btn img{
     float:left;
     height: 52px;
+}
+
+
+/*NEW*/
+
+
+#signin{
+    width: 100%;
+    height: 100%;
+}
+
+#signin-modal{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+    background-color: white;
+}
+
+
+/*JQuery add classes*/
+.show{
+    display: block !important;
+}
+
+.hide{
+    display: none;
 }

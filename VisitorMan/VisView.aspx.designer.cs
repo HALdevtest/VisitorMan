@@ -130,6 +130,15 @@ namespace VisitorMan {
         protected global::System.Web.UI.WebControls.TextBox txtVisiting;
         
         /// <summary>
+        /// btnAgree control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnAgree;
+        
+        /// <summary>
         /// lblSig control.
         /// </summary>
         /// <remarks>
@@ -137,6 +146,15 @@ namespace VisitorMan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSig;
+        
+        /// <summary>
+        /// btnClear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnClear;
         
         /// <summary>
         /// test2 control.
