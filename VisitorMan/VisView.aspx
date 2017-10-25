@@ -290,6 +290,7 @@
                               $('#sig').signature('clear');
                           });
                       });
+                //TEST
             </script>
 
             <script type="text/javascript">
